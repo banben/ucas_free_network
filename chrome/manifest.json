@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "ucas免流量",
+    "version": "1.0",
+    "description": "ucas免流量，妈妈再也不用担心流量用完啦",
+    "content_scripts": [
+        {
+            "matches": ["http://210.77.16.21/*"],
+            "js": ["js/content.js"]
+        }
+    ],
+    "background": {
+        "scripts": ["js/background.js"],
+        "persistent": true
+    },
+    "web_accessible_resources": [
+        "js/*"
+    ],
+    "permissions": [ 
+        "webRequest",
+        "webRequestBlocking",
+        "*://*/*"
+    ]
+}

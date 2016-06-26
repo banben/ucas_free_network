@@ -1,8 +1,8 @@
 {
     "manifest_version": 2,
-    "name": "ucas免流量",
+    "name": "UCAS免流量助手",
     "version": "1.0",
-    "description": "ucas免流量，妈妈再也不用担心流量用完啦",
+    "description": "UCAS免流量，妈妈再也不用担心流量用完啦",
     "content_scripts": [
         {
             "matches": ["http://210.77.16.21/*"],
